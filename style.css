@@ -1,0 +1,184 @@
+body {
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  margin:0; !important
+}
+.wrapper {
+  width:100%;
+  font-family: 'Lato', sans-serif;
+}
+.nav {
+  width:100%;
+  background-color: #cccccc;
+  opacity:0.8;
+  text-align: center;
+  border-radius: 3px;
+	/border-bottom: 1px solid #000000;
+}
+.nav ol {
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  font-size:18px;
+  height:40px;
+  line-height: 200%;
+  display:inline-block;
+}
+.nav ol a {
+  color:#666666;
+  text-decoration: none;
+  display:block;
+  cursor:pointer;
+}
+.nav ol>li {
+  float:left;
+  width:150px;
+  height:40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /border-right: 1px solid #666666;
+}
+.nav ol>li>a:hover {
+  color:#000000;
+}
+.navl {
+  text-align: left;
+  float:left;
+}
+.navr {
+  text-align: right;
+  float:right;
+}
+.content {
+  width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top {
+  height:600px;
+  padding:20px;
+  text-align: center;
+}
+.top h1 {
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 460px;
+}
+.top p {
+  font-size:16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#main {
+  opacity:0.90;
+  height:700px;
+  padding:20px;
+  background-color: #f3f3f3;
+  width:100%;
+}
+#main h3 {
+  font-size: 42px;
+  text-align: center;
+}
+a.ilink {
+  color:#000;
+  text-decoration: none;
+}
+a.pow {
+  color:#000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+.i {
+  float:left;
+  width:920px;
+  height:150px;
+  padding:40px;
+}
+.i a:hover {
+  color:#E0F1FF;
+  transition: 0.3s;
+}
+.i p {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-right: 25px;
+  margin-top: -5px;
+}
+.i span {
+  float:left;
+}
+.j {
+  float:left;
+  height:150px;
+  margin-top: 55px;
+}
+#desk {
+  opacity:0.90;
+  margin-top: 230px;
+  height:600px;
+  background-color: #ffffff;
+}
+#sec {
+  opacity:0.90;
+  margin-top: 230px;
+  height:600px;
+  background-color: #ffffff;
+}
+#kontakt {
+  opacity:0.90;
+  margin-top: 230px;
+  height:600px;
+  background-color: #ffffff;
+  margin-bottom: 180px;
+}
+#kontakt form {
+  margin-top: 10px;
+  margin-bottom: 400px;
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+}
+#kontakt form div + div {
+    margin-top: 1em;
+}
+#kontakt label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+#kontakt input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+#kontakt input:focus, textarea:focus {
+    border-color: #000;
+}
+#kontakt textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+#kontakt .button {
+    padding-left: 90px;
+}
+#kontakt button {
+    margin-left: .5em;
+}
+#kontakt a {
+  margin-top: auto;
+}
+.footer {
+  padding-top: 50px;
+  text-align: center;
+  color:#ffffff;
+  height:300px;
+  background-color: #333;
+}
