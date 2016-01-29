@@ -1,0 +1,1 @@
+# yoshuro.github.io
