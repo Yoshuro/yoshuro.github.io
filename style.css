@@ -89,7 +89,7 @@ body {
 }
 #main {
   opacity:0.90;
-  height:700px;
+  height:100vh;
   padding:20px;
   background-color: #f3f3f3;
   width:100%;
@@ -104,7 +104,7 @@ a.ilink {
 }
 .pow {
   position: relative;
-  top:95px;
+  top:160px;
   left:470px;
 }
 a.pow {
@@ -118,6 +118,7 @@ a.pow {
   width:920px;
   height:150px;
   padding:40px;
+  margin-top: 45px;
 }
 .i a:hover {
   color:#E0F1FF;
@@ -140,7 +141,7 @@ a.pow {
 #desk {
   opacity:0.90;
   margin-top: 230px;
-  height:600px;
+  height:100vh;
   background-color: #ffffff;
 }
 #desk p {
@@ -153,7 +154,7 @@ a.pow {
 #sec {
   opacity:0.90;
   margin-top: 230px;
-  height:600px;
+  height:100vh;
   background-color: #ffffff;
 }
 #sec p {
@@ -166,7 +167,7 @@ a.pow {
 #kontakt {
   opacity:0.90;
   margin-top: 230px;
-  height:600px;
+  height:100vh;
   background-color: #ffffff;
   margin-bottom: 180px;
 }
@@ -183,6 +184,10 @@ a.pow {
   color:#ffffff;
   height:320px;
   background-color: #333;
+}
+.footer a {
+  text-decoration: none;
+  color:#000;
 }
 .yt {
   float:left;
