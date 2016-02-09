@@ -61,7 +61,15 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
   border-radius: 6px;
-  border: 2px solid;
+  border: 2px solid #333;
+  opacity:0.95;
+  margin-left: 35px;
+}
+.content h4 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 .top {
   height:600px;
@@ -96,7 +104,7 @@ a.ilink {
 }
 .pow {
   position: relative;
-  top:160px;
+  top:95px;
   left:470px;
 }
 a.pow {
@@ -139,7 +147,8 @@ a.pow {
   font-size: 18px;
   letter-spacing: 1px;
   padding:30px;
-  padding-top: 80px;
+  padding-top: 60px;
+  text-align: justify;
 }
 #sec {
   opacity:0.90;
@@ -151,7 +160,8 @@ a.pow {
   font-size: 18px;
   letter-spacing: 1px;
   padding:30px;
-  padding-top: 80px;
+  padding-top: 60px;
+  text-align: justify;
 }
 #kontakt {
   opacity:0.90;
@@ -164,19 +174,21 @@ a.pow {
   font-size: 18px;
   letter-spacing: 1px;
   padding:30px;
-  padding-top: 80px;
+  padding-top: 60px;
+  text-align: justify;
 }
 .footer {
   padding-top: 50px;
   text-align: center;
   color:#ffffff;
-  height:300px;
+  height:320px;
   background-color: #333;
 }
 .yt {
   float:left;
   width:225px;
-  padding:25px;
+  margin-left: 12,5px;
+  margin-right: 25px;
   font-size:76px;
 }
 .yt:hover {
@@ -186,7 +198,7 @@ a.pow {
 .fb {
   float:left;
   width:225px;
-  padding:25px;
+  margin-right: 25px;
   font-size:76px;
 }
 .fb:hover {
@@ -196,7 +208,7 @@ a.pow {
 .tw {
   float:left;
   width:225px;
-  padding:25px;
+  margin-right: 25px;
   font-size:76px;
 }
 .tw:hover {
@@ -206,7 +218,7 @@ a.pow {
 .gh {
   float:left;
   width:225px;
-  padding:25px;
+  margin-right: 12,5px;
   font-size:76px;
 }
 .gh:hover {
