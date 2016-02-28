@@ -11,6 +11,7 @@ body {
 }
 .nav {
   width:100%;
+  min-width: 1020px;
   background-color: #cccccc;
   opacity:0.8;
   text-align: center;
@@ -58,12 +59,12 @@ body {
 }
 .content img {
   float:right;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  /margin-top: 60px;
+  /margin-bottom: 60px;
   border-radius: 6px;
   border: 2px solid #333;
   opacity:0.95;
-  margin-left: 35px;
+  /margin-left: 35px;
 }
 .content h4 {
   text-align: center;
@@ -87,12 +88,24 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
 }
+.tx {
+  float:left;
+  display:inline-block;
+  width:600px;
+}
+.im {
+  float:left;
+  display: inline-block;
+  width:400px;
+  margin-top: 10%;
+}
 #main {
   opacity:0.90;
   height:100vh;
   padding:20px;
   background-color: #f3f3f3;
   width:100%;
+  min-width: 1020px;
 }
 #main h3 {
   font-size: 42px;
@@ -102,10 +115,12 @@ a.ilink {
   color:#000;
   text-decoration: none;
 }
+h6 {
+  text-align: center;
+}
 .pow {
   position: relative;
-  top:160px;
-  left:470px;
+  top:10vh;
 }
 a.pow {
   color:#000;
@@ -143,6 +158,8 @@ a.pow {
   margin-top: 230px;
   height:100vh;
   background-color: #ffffff;
+  min-width: 1020px;
+  width:100%;
 }
 #desk p {
   font-size: 18px;
@@ -156,6 +173,8 @@ a.pow {
   margin-top: 230px;
   height:100vh;
   background-color: #ffffff;
+  min-width: 1020px;
+  width:100%;
 }
 #sec p {
   font-size: 18px;
@@ -170,6 +189,8 @@ a.pow {
   height:100vh;
   background-color: #ffffff;
   margin-bottom: 180px;
+  min-width: 1020px;
+  width:100%;
 }
 #kontakt p {
   font-size: 18px;
@@ -184,6 +205,8 @@ a.pow {
   color:#ffffff;
   height:320px;
   background-color: #333;
+  width:100%;
+  min-width: 1020px;
 }
 .footer a {
   text-decoration: none;
