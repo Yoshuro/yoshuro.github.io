@@ -3,6 +3,7 @@ body {
   background-image: url("../img/mountains-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   margin:0; !important
 }
 .navbar {
@@ -53,7 +54,11 @@ body {
   font-size:22px;
 }
 .top h1 {
-  padding-top: 320px;
+  padding-top: 300px;
+}
+.top a {
+  text-decoration: none;
+  color:#000;
 }
 .footer {
   padding-top: 50px;
