@@ -3,6 +3,7 @@ body {
   background-image: url("../img/mountains-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center,center; 
   overflow: hidden;
   margin:0; !important
 }
