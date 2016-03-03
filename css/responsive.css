@@ -31,6 +31,37 @@
 .toggle-nav {
     display:none;
 }
+@media screen and (max-height:620px) {
+  .logo {
+    font-size:16px;
+  }
+  .logo h1 {
+    padding-top: 30vh;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+@media screen and (max-height:460px) {
+  .logo {
+    font-size:12px;
+  }
+  .logo h1 {
+    padding-top:25vh;
+  }
+  .footer {
+    height:10vh;
+    font-size: 8px;
+  }
+}
+@media screen and (max-height:320px) {
+  .logo {
+    font-size:10px;
+  }
+  .logo h1 {
+    padding-top: 22vh;
+  }
+}
 @media screen and (max-width: 1150px) {
     .wrap {
         width:90%;
@@ -45,6 +76,7 @@
     }
     .navbar ul>li {
       width:100%;
+	  padding:0;
     }
     .navbar ul {
         width:100%;
@@ -54,6 +86,7 @@
         border-radius:3px;
         background:#303030;
         min-height: 120px;
+		padding:0;
     }
 
     .navbar ul:after {
