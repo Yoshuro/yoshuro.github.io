@@ -76,7 +76,7 @@
 }
 @media screen and (max-width:790px) {
 	.topmid,.botmid {
-		font-size:1.6em;
+		font-size:1.5em;
 	}
   .top {
     font-size:1.4em;
@@ -87,7 +87,7 @@
 }
 @media screen and (max-width:490px) {
 	.topmid,.botmid {
-		font-size:1.1em;
+		font-size:1.3em;
 	}
   .top {
     font-size:0.9em;
