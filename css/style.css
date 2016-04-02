@@ -313,6 +313,7 @@ footer {
 
 .input-form {
     position:relative;
+    padding-top:15px;
 }
 
 #emailField {
