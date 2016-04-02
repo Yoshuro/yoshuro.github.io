@@ -1,43 +1,123 @@
 <!doctype html>
-<html lang="pl">
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start | Chronos Protocol</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-  <link rel="stylesheet" href="css/index.css" type="text/css"/>
-  <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="js/rmenu.js"></script>
-</head>
-<body>
-<div class="wrap">
-<div class="navbar">
-  <ul class="active">
-    <li class="current-item">
-      <a href="index.html">Start</a>
-    </li>
-    <li>
-      <a href="main.html">O firmie</a>
-    </li>
-    <li>
-      <a href="kontakt.html">Kontakt</a>
-    </li>
-  </ul>
-  <a class="toggle-nav" href="#">&#9776;</a>
-</div>
-</div>
-<div class="logo">
-  <h1>Chronos Protocol</h1>
-  <p>
-    Selective Mind-mapping
-  </p>
-  <a href="main.html"><h3>Przejdz do strony glownej</h3></a>
-</div>
-<div class="footer">
-  <h4>Chronos Protocol | &copy; Szymon Solak 2016</h4>
-</div>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chronos Protocol</title>
+        <link rel="shortcut icon" href="icon.ico" />
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/core.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="topbar">
+                <span>
+                    Sprawdź mój najnowszy projekt <a href="#">Weyland</a> , proste narzędzie do tworzenia aplikacji siecowych
+                </span>
+            </div>
+            <nav>
+                <div class="container">
+                    <div id="nav-logo">
+                        <a href="#"><img src="images/logo-s.png" alt="Anarch"/></a>
+                        <a href="#" id="nav-toggle">&#9776;</a>
+                    </div>
+                    <div id="nav-collapse">
+                        <ul id="navbar-right">
+                            <li class="nav-link"><a href="#">Podstawy</a></li>
+                            <li class="nav-link"><a href="#">Dokumentacja</a></li>
+                            <li class="nav-link"><a href="#">Forum</a></li>
+                            <li class="nav-link"><a href="#">Blog</a></li>
+                            <li class="nav-link"><a href="#">Platforma</a></li>
+                            <li id="dropdown" class="nav-link">
+                                <a href="#" id="dropdown-toggle">Więcej<span id="drop"></span></a>
+                                <ul id="dropdown-menu">
+                                    <div id="arrowup"></div>
+                                    <li><a href="#">Przykład Użycia</a></li>
+                                    <li><a href="#">Praca</a></li>
+                                    <li><a href="#">Rynek</a></li>
+                                    <li><a href="#">Firma na świecie</a></li>
+                                    <li><a href="#">Kreator</a></li>
+                                    <li><a href="#">Sklep</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="slider">
+                <div class="slide active-slide">
+                    <div class="container">
+                         <div class="slide-text">
+                            <h2>Wieloplatformowość</h2>
+                            <p>Buduj aplikacje które będą współpracowały zarówno z system Windows , Linux oraz OSX.</p>
+                         </div>
+                         <div class="slide-image">
+                            <img src="images/cross-platform.png"/>
+                         </div>
+                      </div>
+                   </div>
+                  <div class="slide">
+                      <div class="container">
+                        <div class="slide-text">
+                           <h2>Prostota</h2>
+                           <p>Nasz aplikacja jest niezwykle prosta w użytku i nawet początkujący nie będzie miał żadnych problemów.</p>
+                        </div>
+                        <div class="slide-image">
+                          <img src="images/gears.png"/>
+                        </div>
+                      </div>
+                   </div>
+                  <div class="slide">
+                    <div class="container">
+                        <div class="slide-text">
+                           <h2>Aktywne Forum</h2>
+                           <p>Posiadamy aktywne forum na którym w razie pytan czy problemów możesz liczyć na pomoc innych. Zapowiadamy tam też przyszłe zmiany w naszej aplikacji i stronie.</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/forum.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="slider-nav">
+                    <a href="#" class="arrow-prev"><img src="images/arrow-prev.png"></a>
+                    <ul class="slider-dots">
+                        <li class="dot active-dot">&bull;</li>
+                        <li class="dot">&bull;</li>
+                        <li class="dot">&bull;</li>
+                    </ul>
+                    <a href="#" class="arrow-next"><img src="images/arrow-next.png"></a>
+                </div> 
+            <div id="content">
+                <div class="container">
+                    <div id="features">
+                        <div id="features-desc">
+                            <h1>Twórz aplikacje przy użyciu swoich ulubionych technologii</h1>
+                            <p>Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS CSS components, gestures, and tools for    building highly interactive apps. Built with Sass and optimized for AngularJS.</p>
+                        </div>
+                    </div>
+                    <div id="learn-more">
+                        
+                    </div>
+            </div>
+            </div>
+            <footer>
+                <div id="newsletter-box">
+                    <div id="newsletter-text">
+                        <h1>Zawsze na bieżąco!</h1>
+                        <p>Zapisz się aby otrzymywac najnowsze wieści o naszej aplikacji.</p>
+                    </div>
+                    <form class="input-form">
+                        <input id="emailField" placeholder="Email" required>
+                        <button class="btn" type="submit">Zapisz się</button>
+                    </form>
+               </div>
+                <div id="copy">
+                    <p class="author">@2016 <a href="https://github.com/yoshuro">Szymon Solak</a></p>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
