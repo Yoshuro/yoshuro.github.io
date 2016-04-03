@@ -99,6 +99,8 @@ nav {
     padding-right:15px;
     padding-left:15px;
     font-size:1.6em;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 #nav-collapse:after {
