@@ -287,6 +287,10 @@ nav {
     height:256px;
 }
 
+.features-block:last-child {
+    margin-bottom:0px;
+}
+
 .features-block:after {
     clear:both;
 }
