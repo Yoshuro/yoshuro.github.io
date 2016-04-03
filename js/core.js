@@ -33,13 +33,12 @@ var main = function () {
         if(prevDot.length===0) prevDot = $('.dot').last();
         currentDot.removeClass('active-dot');
         prevDot.addClass('active-dot');
-    });
-    var screenWidth = $(window).width();
-        if (screenWidth <= 580) {
-            $('#swap-right').after($('#swap-left'));
-            } 
-        else {
-            return false;
+    }); 
+    if ($(window).width() <= 580) {
+        $('#swap-right').after($('#swap-left'));
+        } 
+    else {
+        return false;
         }
 };
 $(document).ready(main);
