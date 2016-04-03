@@ -232,7 +232,7 @@ nav {
 
 .slide-image img {
     margin-top:75px;
-    width:48%;
+    width:250px;
     height:auto;
 }
 
@@ -278,6 +278,13 @@ nav {
 }
 
 /* Features */
+
+#content {
+    background-color:#fff;
+    padding-top: 25px;
+    display:flex;
+    flex-wrap:wrap-reverse;
+}
 
 #features-desc {
     margin-bottom:45px;
@@ -333,12 +340,6 @@ nav {
 
 
 /* Stopka */
-
-#content {
-    background-color:#fff;
-    min-height:1000px;  /* test */
-    padding-top: 25px;
-}
 
 #newsletter-box {
     margin: 0 auto 30px;
@@ -465,12 +466,19 @@ footer {
         width:100%;
         margin-bottom:-50px;
     }
+    .slide-image img {
+        width:auto;
+        height:12vh;
+    }
+}
+@media (max-width:580px) {
     .left-half,.right-half {
         width:100%;
         display:block;
     }
     .left-half img,.right-half img {
         margin-left:-10px;
+        margin-top:25px;
     }
 }
 @media (max-width:678px) {

@@ -34,5 +34,12 @@ var main = function () {
         currentDot.removeClass('active-dot');
         prevDot.addClass('active-dot');
     });
+    var screenWidth = $(window).width();
+        if (screenWidth <= 580) {
+            $('#swap-right').after($('#swap-left'));
+            } 
+        else {
+            return false;
+        }
 };
 $(document).ready(main);
