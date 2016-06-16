@@ -20,10 +20,6 @@ a:hover {
 	transition: color .1s ease-in-out;
 }
 
-.fa {
-    transition: all 0.3s;
-}
-
 html {
 	height:100%;
 }
@@ -33,9 +29,9 @@ body {
 	min-height:100%;
 	font-family: 'Noto Sans', sans-serif;
     color:#090909;
-	background-color:#e6e6e6;
-	transition: background-color 0.2s ease-in-out;
-	background:url("../img/mochaGrunge.png");
+	background-color:#6682B2;
+	//transition: background-color 0.2s ease-in-out;
+	//background:url("../img/nice_snow.png");
 	display:flex;
 }
 
@@ -92,12 +88,12 @@ nav {
 #nav-btn {
 	font-size:1.6em;
 	color:#56657F;
-	padding:2px 8px 0;
+	padding:2px 8px 0; 
+    transition:all 0.3s ease-in-out;
 }
 
 .nav-btn-open {
-	position: fixed;
-	right:220px;
+	transform:translateX(-220px);
 }
 
 .nav-item li:hover {
@@ -115,7 +111,7 @@ nav {
     opacity:0.7;
     margin-left: auto;
     margin-right: auto;
-    background:#56657F;
+    background:#ABCAFF;
 }
 
 .nav-list li:last-child:after {
@@ -123,9 +119,14 @@ nav {
     display:none;
 }
 
+.nav-list li:hover a ,#nav-btn:hover{
+    color:#9FF5FF;
+}
+
 .nav-item a {
     padding-top:12px;
     display:block;
+    color:#56657F;
 }
 
 /* --------------Sections----------------- */
