@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  line-height: 1.5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.key {
+  flex: 1 1 33%;
+  text-align: center;
+  background: inherit;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+.key h1 {
+  font-size: 1.2em;
+  color: #333;
+  pointer-events: none;
+}
+.key span {
+  font-size: 1em;
+  color: #555;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.key:hover {
+  background: #f5de47;
+}
+@media (min-width: 640px) {
+  .key {
+    flex: 1 1 auto;
+  }
+}
+.playing {
+  transform: scale(1.1);
+  background: #f5de47;
+}
