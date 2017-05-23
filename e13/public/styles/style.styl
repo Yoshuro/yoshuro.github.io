@@ -1,0 +1,337 @@
+@import "clear.styl"
+@import "variables.styl"
+@import "animations.styl"
+@import "grid.styl"
+
+// Zaznaczanie elementów
+
+::selection
+  background accent
+
+::-moz-selection
+  background accent
+
+// ---
+
+html
+  font-size 16px
+
+body
+  width 100%
+  min-height 100vh
+  overflow-x hidden
+  background bg
+  line-height 1.5
+  font-family main-font
+  font-size 62.5%
+  color font-default
+
+  display flex
+  flex-direction column
+
+.container
+  width 100%
+  flex 1
+  display flex
+  flex-direction column
+
+// --- Style globalne ---
+
+a
+  color font-default
+  transition-short(color)
+  &:hover
+    color font-focus
+
+h1,h2,h3,h4,h5,h6
+  font-family header-font
+  color font-header
+
+section
+  width 94%
+  margin 0 auto
+  font-size font-normal
+  .headline
+    padding 1.4em 0
+    &__title
+      font-size font-normal
+      width 100%
+      border-bottom 1px solid accent-dark
+    &__sub
+      padding-left 1em
+  .text
+    text-align justify
+  @media (min-width screen-full)
+    width 70%
+
+// --- Klasy pomocnicze ---
+
+.hidden
+  display none
+
+.shade
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background rgba(0, 0, 0, .75)
+  z-index 1
+
+// --- Nawigacja ---
+
+.nav
+  width 100%
+  position fixed
+  z-index 2
+  top 0
+  left 0
+  background bg
+
+  &__bar
+    width 100%
+    height 3rem
+    padding 0 1.6em
+    background bg
+    display flex
+    justify-content space-between
+    align-items center
+    border-bottom 1px solid accent
+
+    @media(min-width screen-large)
+      display none
+
+  &__left
+    display flex
+    align-items center
+
+    img
+      width 32px
+      height 32px
+      margin-right .6em
+
+  &__button
+    display block
+    cursor pointer
+
+    &-text
+      color font-default
+      transition-short(color)
+
+      &:hover
+        color font-focus
+
+  &__list
+    width 100%
+    display flex
+    flex-direction column
+    background bg
+    position absolute
+    top 3rem
+    left 0
+    transform translateX(-100%)
+    transition-medium(transform)
+
+    &.show
+      transform translateX(0)
+
+    @media(min-width screen-large)
+      position static
+      flex-direction row
+      transform translateX(0)
+
+  &__item
+    flex 1
+    display flex
+    align-items center
+
+  &__link
+    width 100%
+    min-height 3.4em
+    padding .6em 0
+    font-size font-small
+    border-bottom 1px solid accent
+
+    display flex
+    justify-content center
+    align-items center
+
+    position relative
+
+    &:after
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      width 100%
+      height 0
+      background accent
+      transition-short(height)
+    
+    &:hover:after
+      height 4px
+
+    &--active:after
+      height 4px
+
+// --- Nagłówek ---
+
+#header
+  width 100%
+  min-height 12em
+  padding 1.4em 0
+  margin-top 3rem
+  background accent-darker
+
+  display flex
+  flex-direction column
+  justify-content space-around
+  align-items center
+
+  .text
+    width 50%
+    h1
+      font-size font-big
+    p
+      font-size font-small
+
+  @media(min-width screen-large)
+    flex-direction row
+
+footer
+  width 100%
+  font-size font-small
+  background accent-darker
+
+  p
+    text-align right
+    padding .4em 1em
+
+// --- Tableka ---
+
+.table
+  width 100%
+
+  &__header
+    background accent-dark
+    color #fff
+
+  &__row
+    text-align center
+
+    // Zebra
+    &:nth-of-type(2n + 1)
+      background accent
+      color bg
+
+// --- Formularz ---
+
+.form
+  width 100%
+
+  &__row
+    width 100%
+
+    label
+      display block
+      padding .2em 0
+    input, button, textarea, select
+      width 100%
+      border 1px solid rgba(0,0,0,.15)
+      border-radius .25rem
+      font-size 1rem
+      padding .5rem .75rem
+      transition-medium(border-color)
+      &:focus
+        border 1px solid font-focus
+
+    input[type="reset"]
+      margin-bottom 1rem
+
+  &__submit
+    background white
+    transition-medium(background)
+
+    &--loading
+      position relative
+      color white
+
+      &:after
+        content ''
+        position absolute
+        top calc(50% - 1em)
+        left calc(50% - 1em)
+
+        width 2em
+        height 2em
+
+        border 2px solid black
+        border-radius 50%
+        border-color black black black transparent
+
+        animation spin .44s ease-in infinite
+    &--done
+      background rgb(0, 132, 0)
+      color #fef
+
+// --- Galeria ---
+
+.gallery
+  width 100%
+  display flex
+  flex-wrap wrap
+
+  &__item
+    position relative
+    flex 1 0 100%
+    padding 0 1em
+    margin 1em 0
+    cursor pointer
+
+    img
+      width 100%
+      height auto
+
+    figcaption
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      margin 0 1em
+      text-indent .4em
+      background accent-dark
+
+    &:after
+      content ''
+      position absolute
+      top 0
+      left 0
+      right 0
+      margin 0 1em
+      height 100%
+      transition-medium(background)
+
+    &:hover
+
+      figcaption
+        color accent-dark
+
+      &:after
+        background rgba(accent-dark, .85)
+
+    @media(min-width screen-medium)
+      flex 1 0 50%
+    
+    @media(min-width screen-large)
+      flex 1 0 33%
+
+    @media(min-width screen-full)
+      flex 1 0 25%
+
+// --- O Stronie ---
+
+// Canvas
+#draw
+  width 100%
+  border 1px solid accent-dark
+  user-select none
