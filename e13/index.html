@@ -71,44 +71,16 @@
       </div>
       <div class="row">
         <p class="col">
-          Czy nie byłoby sposobu,
-          Ustąpiwszy ze stron obu,
-          Zapomniawszy przeszłe szkody,
-          Do sąsiedzkiej wrócić zgody?
-          Ja - z nim w zgodzie? - Mocium panie,
-          Wprzódy słońce w miejscu stanie,
-          Wprzódy w morzu wyschnie woda,
-          Nim tu u nas będzie zgoda."
+          Przełącznik w sieci Ethernet analizuje adresy MAC nadawcy i odbiorcy przychodzącej ramki. Adres MAC nadawcy jest wykorzystywany do prowadzenia tablicy skojarzeń, zawierającej adresy MAC i odpowiadające im porty przełącznika, tablica ta może zawierać 4096, 8192, a nawet 16384 wpisów. By zapewnić dostosowywanie się przełącznika do zmian w sieci ważność wpisu wygasa jeżeli przez określony czas nie napływają ramki z danym MAC nadawcy.
+          Po otrzymaniu ramki przełącznik szuka adresu MAC odbiorcy w tablicy skojarzeń, jeżeli adres nie występuje w niej, to ramka wysyłana jest na wszystkie porty z wyjątkiem źródłowego, gdy jest znany, to tylko na port określony w tablicy skojarzeń.
+          Przez przesyłanie ramki tylko na jeden port przełączniki ograniczają domenę kolizyjną do pojedynczego portu, dzięki czemu są w stanie zapewnić każdemu hostowi podłączonemu do portu osobny kanał transmisyjno-nadawczy, nie zaś współdzielony, jak to jest w przypadku koncentratora.
         </p>
         <p class="col">
-          Idę, idę.
-          na stronie
-          Diabeł nadał tryumf taki!
-          Coraz głębiej lezę w biedę;
-          W moim jeńcu mam rywala -
-          Przykro z bliska, gorzej z dala;
-          Tamten zamknie, ten zastrzeli -
-          A bodaj cię diabli wzięli!
-          wracając od drzwi
-          A sakiewka?.."
+          Przełączniki zarządzalne umożliwiają również wydzielanie sieci wirtualnych (VLAN). Przełącznik przekazuje ruch z portu przypisanego do danej sieci VLAN tylko do portów należących do tej sieci oraz portów określonych jako wspólne (trunk). Porty mogą być przypisane do VLAN statycznie lub na podstawie adresu MAC podłączonego urządzenia.
+          Sieci wirtualne między dwoma podłączonymi do siebie przełącznikami obsługiwane są za pomocą specjalnego rodzaju połączenia nazywanego trunk. W standardzie IEEE 802.1Q każda ramka przesyłana za pomocą trunkingu opatrzona zostaje dodatkowym 4-bajtowym polem w którym zapisany jest też identyfikator sieci VLAN do której przebiega transmisja. Tego typu ramki, nazywane (o)znaczonymi (ang. tagged) mogą mieć maksymalną długość 1523 bajtów
         </p>
         <p class="col">
-          Przed godziną z trwogi mdleje, 
-          Za godzinę - wzorem męstwa;
-          To nie widzi podobieństwa,
-          To ma więcej niż nadzieję. -
-          O płci piękna, luba, droga!
-          Twoja radość, twoje żale -
-          To jeziora lekkie fale:
-          Jedna drugą ciągle ściga -
-          Ta się schyla, ta się dźwiga,
-          Ale zawsze w blasku słońca,
-          Zawsze czysta i bez końca! -
-          A my, dumni władcy świata,
-          Mimo siebie pochwyceni,
-          Za tym cieniem, co ulata,
-          Całe życie, z chwili w chwilę,
-          Przepędzamy jak motyle."
+          Obecnie na rynku są również przełączniki trzeciej warstwy modelu ISO/OSI, czyli tzw. przełączniki trasujące oraz inne modele pracujące w jeszcze wyższych warstwach modelu OSI.
         </p>
       </div>
     </section>
